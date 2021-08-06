@@ -1,0 +1,47 @@
+Passos para instalação do Ubuntu Server 20.04.02 LTS
+
+Download: https://ubuntu.com/download/
+Usar a opção 2 (Instalação Manual do Servidor)
+
+*Não instale a versão desktop
+
+Use as setas direcionais para navegar no guia de instalação.
+
+Passos:
+1. Linguagem da instalação: English
+
+2. Configuração de teclado 
+	Com as setas do seu teclado, navegue e troque para
+	o layout: Portuguese (Brazil)
+
+3. Em Network connections
+	deixe o padrão
+
+4. Configuração de proxy
+	Não tem (deixe como está)
+
+5. Configuração do espelho  de atualização (mirror)
+	deixe o padrão
+
+6. Uso do disco (Guided storage configuration)
+	deixe o padrão
+
+7. Storage configuration 
+	Padrão
+	Na confirmação: continue
+
+8. Profile setup
+	Informe os dados do servidor, usuário e senha
+	*****GUARDE COM (MUITO - MUITISSIMO) CUIDADO *****
+		
+9. SSH
+	Não habilite essa opção
+
+10. Featured Server Snaps
+	Não habilite nenhuma
+
+11. Espere ser aplicado as configurações de instalação.
+	Verifique a mensagem: Install complete!
+	Siga as instruções do console; vai solicitar um reboot
+	********Retire a mídia de instalação (DVD)
+12. Dê o reboot.
