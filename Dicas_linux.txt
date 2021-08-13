@@ -1,0 +1,12 @@
+Dicas Linux
+
+1 - Colocar -y na instalação de pacotes
+A instalação de pacotes usando apt-get em muitos
+casos precisa de confirmação. 
+Pode-se usar: apt-get install -y pacote_a_instalar
+O -y é a confirmação da instalação.
+Há serviços que precisa de várias confirmações,
+com o -y no comando a instalação segue direto.
+Isso é muito útil quando se está criando um script de instalação.
+
+Obs: É possível também usar assim: apt install -y pacote_a_instalar
