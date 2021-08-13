@@ -10,3 +10,11 @@ com o -y no comando a instalação segue direto.
 Isso é muito útil quando se está criando um script de instalação.
 
 Obs: É possível também usar assim: apt install -y pacote_a_instalar
+
+2 - Comando ifconfig não é padrão no Ubuntu 20.04.02 
+Par visualizar as configurações de rede usando ifconfig no Ubuntu 20
+será necessário instalar o pacote: net-tools.
+Então, use: apt-get install -y net-tools
+
+Pronto, agora dá pra usar o ifconfig e verificar as configurações de rede
+do seu servidor Ubuntu.
