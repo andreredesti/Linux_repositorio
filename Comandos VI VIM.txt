@@ -1,0 +1,43 @@
+Algumas comandos e procedimentos no VI/VIM
+
+O VI/VIM são editores bastante utilizados nas comunidade Linux.
+
+Deixo aqui algumas dicas de uso:
+
+1. Entrando no VI/VIM
+
+No terminal linux abra o VI/VIM (ou o arquivo que deseja utilizar)
+
+2. Modo de Inserção 
+Para entrar no modo de inserção tecle 
+esc i 
+
+Agora você pode escrever usando este editor.
+
+3. Salvar um arquivo (w de write)
+Vai precisar teclar: 
+esc  shift  : e em seguida a letra w
+
+4. Sair do editor (se não houver alterado algum arquivo) (q de quit)
+esc  shift  : e em seguida a letra q 
+
+5. Sair do editor forçadamente (houver alguma alteração no arquivo e não se
+deseja salvar essas alterações)
+
+esc  shift  : e em seguida a letra !q
+
+6. Salvar um arquivo e sair do editor (uma das formas)
+Vai precisar teclar: 
+esc  shift  : e em seguida a letra wq ou qw
+
+7. Salvar o arquivo e sair (outra forma)
+Vai precisar teclar: 
+esc  shift  : e em seguida a letra x
+
+8. Apagar uma linha no VI/VIM
+
+esc dd
+
+9. Abrindo um arquivo VI/VIM e visualizando as linhas numeradas
+dentro do arquivo digite: 
+esc : set number
