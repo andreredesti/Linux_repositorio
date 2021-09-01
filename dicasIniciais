@@ -1,0 +1,44 @@
+Neste primeiro momento precisamos conhecer as várias partições do sistema Linux, também utilizar os comandos mais simples e comuns
+para entender e vivenciar bem como adquirir experiências com o SO.
+
+Dicas
+
+1. Entrar com administrador
+sudo su
+
+2. Navegar pelas diversas partições e pastas do sistema operacional
+
+Use os comandos cd, ls, pwd. O primeiro para entrar nas partições e o segundo para listar o conteúdo.
+Reveja como utilizar cada comando, as opções que eles têm.
+
+3. Escolha local para criar novas partições e arquivos
+
+Comandos que mkdir, rm, mv, touch. 
+Reveja as anotações e material da disciplina ou use a internet para pesquisar mais sobre cada comando e como usá-los
+
+4. Sobre as placas de rede
+Na instalação da sua máquina virtual (ou física) uma placa de rede é configurada automaticamente. Na maioria das vezes recebe a identificação: enp0s3 (pode ser outro nome). Essa placa deve ser sua placa de wan (modos de uso: nat ou bridge). 
+A segunda placa dever ser habilitada como rede interna - ela será configurada manualmente). 
+Trocar a forma de uso desta placa (a 1ª NAT ou Bridge e colocar essa configuração na 2ª placa causará problemas), então mantenha o padrão: placa 1 (nat ou bridge), placa 2 (rede interna)
+
+O comando ip link show vai mostrar os nomes destas placas. Essa é a forma mais atual usada pelo Ubuntu. 
+
+Quem desejar usar o ifconfig vai precisar instalar o net-tools.
+
+Como instalar, então: apt-get install -y net-tools
+
+Com o ifconfig já instalado pode-se verificar as configurações das placas de rede com o comando: ifconfig
+
+Possivelmente não será visto as 3 placas de rede do servidor de inicialmente.
+
+Digo 3, pois há a placa de comunicação interna do próprio servidor a lo (localhost) e as enp0s3 e enp0s8 - se a sua não tiver esse nome, verifique qual é o nome com o comando: ip link show.
+
+Se não aparece a enp0s8 siga esses passos:
+para levantar a placa enp0s8:
+ifconfig enp0s8 up 
+
+caso precise desligar essa placa é só troca up por down.
+
+
+Observação: Informações dos comandos, em muitos casos, podem ser vistas usando --help ou o man (de manual). Exemplo: ls --help ou man ls. 
+O próprio sistema vai fornecer as várias possibilidades de uso para o comando (no caso ls).
