@@ -1,0 +1,31 @@
+Configuração das placas de rede no Servidor Ubuntu:
+
+1. No virtualbox:
+ 	a primeira placa de rede deve está habilitada como nat ou brigde;
+	a segunda deve ser habilitada como rede interna.
+
+2. O arquivo de configuração de rede fica na pasta: /etc/netplan/
+	Esse arquivo deve ser editado para o formato abaixo:
+
+network:
+	version: 2
+	renderer: networkd
+	ethernets: 
+		enp0s8:
+		addresses: []
+		dhcp4: true
+		optional: true
+		
+		enp0s17: 
+		dhcp4: no
+		addresses: [172.31.10.254/24]
+		optional: no
+		nameservers: 
+			addresses: [1.1.1.1, 8.8.8.8]
+
+
+Salve e aplique a configuração adicionada.
+
+Observação: Verfique o nome das placas e defina uma ip privado para sua rede e máscara para a configuração da segunda placa (no exemplo
+a enp0s17).
+
